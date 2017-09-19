@@ -1,0 +1,59 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 800px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 40%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -300px;
+}
+
+.mono {
+	font-family: 'Open Sans', sans-serif;;
+	font-weight: 800;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* Animation Keyframes */
+
+
+@-webkit-keyframes c_move {
+	0% { top: 0px; left: 0px; }
+	25% { top: -150px; left: 0px; }
+	50% { top: -150px; left: 200px; }
+	75% { top: 0px; left: 200px; color: yellow }
+	100% {}
+}
+
+#c {
+	position: relative; /* always define the position to be relative. absolute, or fixed */
+	-webkit-animation: c_move 4s infinite;
+}
+
+@-webkit-keyframes rea_move {
+	0% 100% { top: 0px; left: 0px; }
+	50% { top: 0px; right: 70px; color: yellow; }
+}
+
+#r, #e, #a {
+	position: relative; /* always define the position to be relative. absolute, or fixed */
+	-webkit-animation: rea_move 4s infinite;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes tive_move {
+	0% { top: 0px; left: 0px; }
+	100% { top: 0px; right: 0px; color: yellow; }
+}
+
+#t, #i, #v, #e2 {
+	position: relative; /* always define the position to be relative. absolute, or fixed */
+	-webkit-animation: tive_move 4s infinite;
+}
